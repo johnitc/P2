@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
 body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
@@ -16,42 +17,166 @@ a{
 
 /* ! HEADER */
 
-.header{
-    display: grid;
-    align-items: center;
-    grid-template-areas: "logo . navbar button";
-    grid-template-columns: auto 1fr auto auto;
-}
+    .header{
+        display: grid;
+        align-items: center;
+        grid-template-areas: "logo . nav bouton";
+        grid-template-columns: auto 1fr auto auto;
+    }
 
-.logo {
-    grid-area: logo;
-    padding: 0 2rem;
-    height: 2.8rem;
-}
+    .logo {
+        grid-area: logo;
+        height: 2.8rem;
+    }
 
-.nav {
-  grid-area: navbar;
-  display: flex;
-  align-items: center;
-}
+    .nav {
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+    }
 
-.nav-lien {
-  padding: 2rem;
-  font-weight: 500;
-  text-align: center;
-  transition-duration: 0.1s;
-  border-top: 3px transparent solid;
-  border-bottom: 3px transparent solid;
-}
+    .nav-lien {
+        padding: 2rem;
+        font-weight: 500;
+        text-align: center;
+        transition-duration: 0.1s;
+        border-top: 3px transparent solid;
+        border-bottom: 3px transparent solid;
+    }
 
-.nav-lien-actif, .nav-lien:hover {
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
-}
+    .nav-lien-actif, .nav-lien:hover {
+        color: #0065FC;
+        border-top: 3px solid #0065FC;
+    }
 
-.nav-inscription {
-  grid-area: button;
-  padding: 2rem;
-  color: #0065FC;
-  font-weight: 600;
-}
+    .nav-inscription {
+        grid-area: bouton;
+        padding: 2rem;
+        color: #0065FC;
+        font-weight: 600;
+    }
+
+/* ! RECHERCHE */
+
+    .recherche-titre{
+        margin-bottom: 0.5rem;
+    }
+
+    .recherche-sous-titre {
+        margin-top: 0;  
+    }
+
+    /* Formulaire */
+
+    .form-recherche {
+        display: inline-flex;
+    }
+
+    .form-recherche-gauche {
+        background-color: #F2F2F2;
+        padding: 1rem 1.25rem;
+        border-radius: 1rem 0 0 1rem;
+        text-align: center;
+    }
+
+    .form-recherche-input {
+        border-right: none;
+        border-left: none;
+        border-top: #F2F2F2 1px solid;
+        border-bottom: #F2F2F2 1px solid;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        width: 14rem;
+        font-size: 1rem;
+        font-weight: bold;   
+        color: #00000069; 
+    }
+
+    .form-recherche-submit {
+        background-color: #0065FC;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        padding: 0 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .form-recherche-submit-texte{
+        display: block;
+    }
+
+    .form-recherche-submit-icon {
+        display: none !important;
+    }
+
+    /* Filtres */
+
+    .filtres{
+        display: flex;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .filtres-titre{
+        margin: 0 2rem 1rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .filtres-bouton{
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+        border: 2px solid #d9d9d9;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        transition-duration: 0.1s;
+        font-weight: bold;    
+    }
+
+    .filtres-bouton-gauche{
+        background-color: #DEEBFF;
+        border-radius: 100%;
+        height: 3rem;
+        width: 3rem;
+        min-height: 3.5rem;
+        min-width: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -2px;   
+        color: blue;     
+    }
+
+    .filtres-bouton-titre{
+        margin: 0 1rem;
+    }
+
+    /* Résultats */
+
+    .resultat{
+        display: flex;
+        align-items: center;
+        margin: 1rem 0 2rem 0;  
+    }
+
+    .resultat-gauche {
+        height: 2rem;
+        width: 2rem;
+        min-height: 2rem;
+        min-width: 2rem;
+        border: solid 1px #d9d9d9;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;   
+        color: #0065FC; 
+    }
+
+/* ! HEBERGEMENT */    
+
+    
